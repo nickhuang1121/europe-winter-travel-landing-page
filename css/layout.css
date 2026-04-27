@@ -1,0 +1,159 @@
+#mtkContainer,
+#mtkContainer * { vertical-align: top; }
+
+#mtkContainer { width: 100%; overflow: hidden; position: relative; background: url(../images/topBannerBg.jpg) #221540 top center no-repeat; }
+
+
+
+
+header.header { position: relative; text-align: center; min-height: 90vh; z-index: 10; }
+header.header h1 { padding-top: 56px; text-align: center; }
+header.header h1 img { width: 100%; max-width: 752px; }
+
+header.header p { display: inline-block; margin-top: 55px; padding: 5px; font: 20px/1em "微軟正黑體";color: #fff; 
+background: rgba(0,0,0,0.8); border:1px solid #fff;  }
+
+.dec01 { position: absolute; top:80px; left: 0; width: 100%; }
+.dec01 img { width: 100%;max-width: 1131px;}
+
+.giftBase { position: relative;z-index: 10; }
+.giftBase .box3 { margin: 0 auto; padding-top: 50px; width: 100%; max-width: 1450px; text-align: center;}
+
+.box3 > div { display: inline-block; width: 33.333333%; text-align: center; letter-spacing: 1px; }
+.box3 > div img { width: 100%;max-width: 422px; }
+.box3 > div p { position: relative; margin: -60px auto 0 auto; padding:20px; width: 90%; border-radius: 10px;
+ font: bold 26px/1.4em "微軟正黑體"; text-align: left; color: #fff;  background: rgba(0,0,0,0.8); z-index: 1; }
+.box3 > div p strong { color: #fff200; }
+.box3 > div p::before { content: ""; position: absolute; top: -18px; left:calc(50% - 10px); height: 18px; width: 21px;
+background: url(../images/arrow_block.png) top center no-repeat; }
+.box3 > div p small { font-size: 12px; }
+
+
+
+.inforBase { position: relative;z-index: 10; margin: 50px auto 0 auto; padding: 20px; width: 90%; max-width: 1450px; text-align: center; border-radius: 10px;
+	background: rgba(0,0,0,0.8)}
+
+.inforBase ul li { margin-bottom: 20px; list-style: none; font: 24px/1.8em "微軟正黑體" ;color: #fff;text-align: left; }
+.inforBase ul li.hide { display: none; }
+.inforBase ul li strong { color: #e7cc14; }
+.buttonInfor { border-bottom:1px solid #e7cc14; }
+.buttonInfor a { padding: 0px 10px; font: bold 27px/1em "微軟正黑體"; color: #221540; border-radius: 10px 10px 0 0;
+cursor: pointer; letter-spacing: 1px; background:#e7cc14  }
+
+
+.c26Base { position: relative; z-index: 10; margin: 70px auto; padding: 20px; width: 100%; max-width: 1450px;  }
+.c26Base h2 { margin: 0 auto; font: bold 40px/67px "微軟正黑體" ;color: #e7cc14 ; min-width: 339px; height: 67px;
+text-align: center; background: url(../images/bg_h2.png) top center no-repeat; }
+.c26Base:nth-child(odd) { background: #584584; }
+
+.group-type-ph { text-align: center; }
+.group-type-ph .ph { margin: 0 10px 20px 10px; display: inline-block;max-width: 300px; border-radius: 10px; overflow: hidden; background: #fff;}
+.group-type-ph .ph img { width: 100%; }
+.group-type-ph .ph .ph-title { padding: 2px 0; font: bold 18px/1.4em "微軟正黑體"; color: #fff; background: #b60040 }
+.group-type-ph .ph .ph-detail {  padding: 2px 5px; font: 16px/1.8em "微軟正黑體"; color: #000; text-align: left; }
+.group-type-ph .ph  .price { display: block; padding: 20px 0; font: bold 12px/1em "微軟正黑體"; letter-spacing: -1px; color: #b60040; }
+.group-type-ph .ph  .price span { display: inline-block; transform: translateY(-4px); font-size: 24px; }
+
+
+@media only screen and (max-width: 1250px) {
+
+.dec01 { top:20%; }
+}
+
+
+
+@media only screen and (max-width: 1120px) {
+
+.dec01 { top:30%; }
+}
+
+
+@media only screen and (max-width: 995px) {
+
+.box3 > div p {  margin: -30px auto 0 auto;}
+}
+
+
+@media only screen and (max-width: 800px) {
+.box3 > div { display: block; margin: 0 auto; width: 90% }
+.box3 > div img { display: inline-block; width: 40%; }
+.box3 > div p { margin: 5% auto 0 auto; display: inline-block; width: 58% }
+
+.box3 > div p::before { top:calc(50% - 9px); left: -19px; transform: rotate(-90deg); }
+
+}
+
+@media only screen and (max-width: 768px) { /*table*/
+header.header { height: 80vh; }
+}
+
+@media only screen and (max-width: 520px) {
+header.header h1 { padding-top: 20vh; }	
+.dec01 { display: none; }
+ .box3 > div { margin-bottom: 20%; }
+.box3 > div img { display: block; margin: 0 auto; width: 70%; }
+.box3 > div p { margin: -10% auto 0 auto; display: block; width: 90%;font: bold 1rem/1.4em "微軟正黑體";  }
+
+.box3 > div p::before {top: -18px; left:calc(50% - 10px);  transform: rotate(0deg); }
+
+}
+
+
+
+
+
+
+
+.slick-dots li.slick-active button:before {
+	color: #fff;
+}
+.slick-dots li button:before {
+	color: #fff;
+}
+
+
+
+
+
+
+/*小動畫社訂*/
+.mouseContent { position: absolute; bottom: 0; left: 0; width: 100%; }
+.mouseBase { display: inline-block; position: relative; margin: 10px 0 0 0; width: 30px; height: 60px; border:3px solid #fff ; box-shadow:0px 0px 10px rgba(0,0,0,0.5); border-radius: 99em; }
+.mouseBase .mouseMov { display: inline-block; position: absolute; top: 8%; left:40%; width: 6px; height: 16px; box-shadow:0px 0px 10px rgba(0,0,0,0.5); border-radius: 99em; background: #fff;
+-webkit-animation: mouseMov 1s  infinite alternate; }
+@-webkit-keyframes mouseMov {
+  from { top: 8%; }
+  to { top: 30%; }
+}
+
+
+
+
+.parUse img {-webkit-animation: parUse 1s  infinite alternate;}
+@-webkit-keyframes parUse {
+  from { transform: translateY(30px); }
+  to {transform: translateY(0px);  }
+}
+
+
+.parBase { position: absolute;top:0; left: 0; width: 100%; z-index: 1; }
+.parDec01 { position: absolute; top:800px; left: 50px; }
+.parDec02 { position: absolute; top:1200px; right: 0px; }
+.parDec03 { position: absolute; top:1300px; left: -70px; }
+.parDec04 { position: absolute; top:1500px; right: 200px; }
+.parDec05 { position: absolute; top:1700px; left: 200px; }
+.parDec06 { position: absolute; top:2200px; right: 50px; }
+.parDec07 { position: absolute; top:1900px; left: 0px; }
+.parDec08 { position: absolute; top:2300px; left: -70px; }
+.parDec09 { position: absolute; top:2700px; right: 20px; }
+.parDec10 { position: absolute; top:2900px; left: -80px; }
+
+.parDec02 img ,
+.parDec04 img ,
+.parDec06 img ,
+.parDec08 img ,
+.parDec10 img{ -webkit-animation-delay: .5s; }
+
+@media only screen and (max-width: 995px) {
+	.parBase { display: none; }
+}
